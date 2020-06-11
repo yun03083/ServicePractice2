@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 Toast.makeText(getApplicationContext(),"Service 시작",Toast.LENGTH_SHORT).show();;
                 Intent intent = new Intent(MainActivity.this,MyService.class);
-                startForegroundService(intent);
                 startService(intent);
             }
         });
